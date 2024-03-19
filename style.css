@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: "Girassol", cursive;
+    background-color: hsl(0, 0%, 94%);
+    background: #424242;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: 270px;
+    min-width: 250px;
+    width: 470px;
+    background: linear-gradient(45deg, #0c0200, #2f3131);
+    box-shadow: rgba(0,0,0,0.15) 0px 5px 15px 0px;
+    position: relative;
+    border-radius: 20px;
+    padding-left: 20px;
+    color: aliceblue;
+    /* cursor: pointer; */
+    /* transition: all 0.2s; */
+   
+}
+
+.card img{
+    height: 370px;
+    max-width:100% ;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.2s;
+}
+
+.card h2{
+    margin-top: 20px;
+    color: #e5aa1b;
+    transition: 0.2s;
+}
+
+.card p , a{
+    font-family: "Source Sans Pro", sans-serif;
+    transition: 0.2s;
+    opacity: 0;
+   
+}
+
+.card p{
+    width: 200px;
+    margin-bottom: 25px;
+}
+
+.card a{
+    text-decoration: none;
+    text-transform: uppercase ;
+    color: black;
+    background-color: #e5aa1d;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card a:hover{
+    color: black;
+    background-color: #fff;
+}
+
+.card:hover img{
+    left: 82%;
+    top: 40%;
+    height: 400px;
+}
+
+.card:hover h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+
+}
+
+.card:hover p,
+.card:hover a{
+    opacity: 1;
+}
